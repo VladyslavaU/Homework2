@@ -57,7 +57,7 @@ public class Quiz {
     }
 
     private int checkInput(final String input) {
-        if (!input.matches("[1-5]") || input.length() > 1) {
+        if (!input.matches("[1-5]")) {
             System.out.println("Пожалуйста введите число от 1 до 5.");
             final Scanner scanner = new Scanner(System.in);
             return checkInput(scanner.next());
